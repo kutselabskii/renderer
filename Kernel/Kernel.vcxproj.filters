@@ -42,6 +42,9 @@
     <ClInclude Include="VKContextWrapper.hpp">
       <Filter>Header Files\Vulkan</Filter>
     </ClInclude>
+    <ClInclude Include="GLShader.hpp">
+      <Filter>Header Files\OpenGL</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Utils.hpp">
@@ -64,6 +67,9 @@
     </ClCompile>
     <ClCompile Include="InputListener.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GLShader.cpp">
+      <Filter>Source Files\OpenGL</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

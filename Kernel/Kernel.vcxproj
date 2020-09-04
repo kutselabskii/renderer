@@ -145,6 +145,7 @@
     <ClInclude Include="Application.hpp" />
     <ClInclude Include="ContextWrapper.hpp" />
     <ClInclude Include="GLContextWrapper.hpp" />
+    <ClInclude Include="GLShader.hpp" />
     <ClInclude Include="InputListener.hpp" />
     <ClInclude Include="VKContextWrapper.hpp" />
   </ItemGroup>
@@ -152,6 +153,7 @@
     <ClCompile Include="Application.cpp" />
     <ClCompile Include="glad.c" />
     <ClCompile Include="GLContextWrapper.cpp" />
+    <ClCompile Include="GLShader.cpp" />
     <ClCompile Include="InputListener.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Utils.hpp" />
