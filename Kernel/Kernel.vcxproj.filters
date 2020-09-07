@@ -25,6 +25,9 @@
     <Filter Include="Source Files\Vulkan">
       <UniqueIdentifier>{c7afaa98-9c9d-4c6c-aa59-9d111fd57a03}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Shaders">
+      <UniqueIdentifier>{f6e2f91f-7a60-4c2a-a7ec-ffc659791e63}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Application.hpp">
@@ -44,6 +47,15 @@
     </ClInclude>
     <ClInclude Include="GLShader.hpp">
       <Filter>Header Files\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="Mesh.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vertices.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Object.hpp">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -71,5 +83,19 @@
     <ClCompile Include="GLShader.cpp">
       <Filter>Source Files\OpenGL</Filter>
     </ClCompile>
+    <ClCompile Include="Mesh.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Object.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Default.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Default.vert">
+      <Filter>Shaders</Filter>
+    </None>
   </ItemGroup>
 </Project>
