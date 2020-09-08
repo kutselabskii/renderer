@@ -4,7 +4,8 @@
 namespace Kernel {
 	class Mesh {
 	public:
-		Mesh(float* vertices);
+		Mesh(float* vertices, unsigned int size);
+		~Mesh();
 
 		void bind();
 

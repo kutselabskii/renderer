@@ -36,7 +36,6 @@ inline void Kernel::__OpenGL::ContextWrapper::InvokeEmptyEvent() {
 }
 
 void Kernel::__OpenGL::ContextWrapper::Update() {
-	glfwSwapBuffers(window);
 	switch (_epb) {
 	case EventProcessingBehavior::Continuous:
 		glfwPollEvents();
@@ -48,6 +47,7 @@ void Kernel::__OpenGL::ContextWrapper::Update() {
 		glfwWaitEventsTimeout(_timeout.value);
 		break;
 	}
+	glfwSwapBuffers(window);
 }
 
 void Kernel::__OpenGL::ContextWrapper::Discard() {
