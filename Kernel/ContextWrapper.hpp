@@ -24,6 +24,7 @@ namespace Kernel {
 		virtual void InvokeEmptyEvent() = 0;
 		virtual void Update() = 0;
 		virtual void Discard() = 0;
+		virtual void preDraw() = 0;
 
 		GLFWwindow* window;
 		std::string title;

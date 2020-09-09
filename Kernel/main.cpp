@@ -13,9 +13,8 @@ int main() {
 	Kernel::Mesh mesh(Kernel::VerticesTemplates::triangle_vertices, sizeof(Kernel::VerticesTemplates::triangle_vertices));
 	const Kernel::Object triangle(shader, mesh);
 
-	glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
 	while (!app->context->ShouldTerminate()) {
-		glClear(GL_COLOR_BUFFER_BIT);
+		app->context->preDraw();
 		
 		triangle.draw();
 		

@@ -14,6 +14,7 @@ namespace Kernel {
 			void InvokeEmptyEvent() override;
 			void Update() override;
 			void Discard() override;
+			void preDraw() override;
 		};
 	}
 }

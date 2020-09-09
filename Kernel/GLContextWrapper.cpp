@@ -53,3 +53,8 @@ void Kernel::__OpenGL::ContextWrapper::Update() {
 void Kernel::__OpenGL::ContextWrapper::Discard() {
 	glfwSetWindowShouldClose(window, true);
 }
+
+void Kernel::__OpenGL::ContextWrapper::preDraw() {
+	glClear(GL_COLOR_BUFFER_BIT);
+}
+
